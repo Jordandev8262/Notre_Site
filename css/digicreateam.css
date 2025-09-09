@@ -1,12 +1,3 @@
-/*
-
-TemplateMo 578 First Portfolio
-
-https://templatemo.com/tm-578-first-portfolio
-
-*/
-
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -70,7 +61,7 @@ h6 {
   letter-spacing: -1px;
 }
 .section-title{
-  margin-top: 150px;
+  margin-top: 60px;
 }
 /*---------------------------------------
   TEAM CARDS STYLES              
@@ -510,22 +501,10 @@ strong {
 
 /*                                            PIRATE                                                    */
 
-.is-sticky,
-.is-sticky .navbare .container {
-  background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
-}
-.is-sticky .navbare .custom-btn {
-  border-color: var(--secondary-color);
-  color: var(--secondary-color);
-}
-
-.is-sticky .navbare .custom-btn:hover {
-  background: var(--secondary-color);
-  color: var(--white-color);
-}
-
-.navbare {
+.hello{
+  border-radius: var(--border-radius-small);
+  padding: 10px 25px;
+  background-color: rgba(0,0,0,.175);
   background: transparent;
   position: absolute;
   z-index: 9;
@@ -534,29 +513,67 @@ strong {
   transition: all 0.3s;
   padding-top: 15px;
   padding-bottom: 0;
-}
-
-.navbare .container {
-  border-radius: var(--border-radius-small);
-  padding: 10px 25px;
-  background-color: white;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+  position: relative;
+  z-index: 222;
+  height: auto !important;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 20px;
 }
 .navbar-brande,
 .navbar-brande:hover {
   color: black;
-}
-
-.navbar-brande {
   font-size: var(--h4-font-size);
   font-weight: var(--font-weight-bold);
 }
-.collapsee{
-  margin-left: 70px;
-  align-items: center;
-  margin-top: -45px;
-  margin-bottom: 6px;
+.containere{
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-top: 7px;
 }
+.popular-product {
+  padding: 0 0 7rem 0; 
+  margin-top: 70px;
+}
+  .popular-product .product-item-sm h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2f2f2f; }
+  .popular-product .product-item-sm a {
+    text-decoration: none;
+    color: #2f2f2f;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    .popular-product .product-item-sm a:hover {
+      color: rgba(47, 47, 47, 0.5); }
+  .popular-product .product-item-sm p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-size: 14px; }
+  .popular-product .product-item-sm .thumbnail {
+    margin-right: 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
+    position: relative; }
+    .popular-product .product-item-sm .thumbnail:before {
+      content: "";
+      position: absolute;
+      border-radius: 20px;
+      background: #dce5e4;
+      width: 98px;
+      height: 98px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1; }
 /*                                            PIRATE                                                    */
 
 
@@ -813,15 +830,10 @@ strong {
       height: 70%; 
     }
     .product-section .btn{
-      background-color: #000000;
+      background-color: var(--secondary-color);
       padding: 5px 25px;
       border-radius: 5px;
     }
-    .product-section .btn:hover{
-      background-color: var(--secondary-color);
-      transition: all ease .5s;
-    }
-    
 }
 
 /*---------------------------------------
@@ -1268,6 +1280,11 @@ strong {
 }
 
 @media screen and (max-width: 991px) {
+  .product-section .btn{
+    background-color: var(--secondary-color);
+    padding: 5px 25px;
+    border-radius: 5px;
+  }
   h1 {
     font-size: 48px;
   }
@@ -1606,10 +1623,24 @@ strong {
 }
 
 @media screen and (max-width: 690px) {
+  .product-section .btn{
+    margin-bottom: 55px;
+    
+  }
   .product-title{
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .popular-product {
+    padding: 0 0 7rem 0; 
+    margin-top: 20px;
+    margin-bottom: -40px;
+  }
+  .hello{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
   }
   .product-price{
     display: block;
