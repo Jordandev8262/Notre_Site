@@ -24,7 +24,9 @@
     gap: 2px;
     margin: 5px 0;
   }
-
+  .card-price{
+    margin-top: -13px;
+  }
   .star {
     color: gold;
     font-size: 1.2em;
@@ -39,6 +41,10 @@
     }
     .electro{
       margin-top: 60px;
+    }
+    .secteur{
+      color: black;
+      font-size: 13px;
     }
     .product-grid {
       display: flex;
@@ -99,7 +105,16 @@
     .card button:hover {
       background-color: #2980b9;
     }
-
+    a{
+      text-decoration: none;
+    }
+    a h5{
+      color: black;
+      font-size: 14px;
+    }
+    a h5:hover{
+      color: rgb(54, 40, 255);
+    }
     /* Responsive */
     @media (max-width: 768px) {
       .product-grid {
@@ -114,7 +129,10 @@
   </style>
 </head>
 <body>
+  
     <div class="form-floating" style="text-align: center; margin-bottom: 30px;">
+      <a href="index.html" class="home"><h5>ACCUEIL</h5></a>
+      
         <input type="text" class="" id="searchInput" placeholder="Rechercher une Boutique ..." style="width: 60%; padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
       </div>
       
@@ -134,7 +152,9 @@
               <span class="star">&#9734;</span> <!-- Étoile vide -->
             </div>
         </div>
-        <div class="card-price">KINSHASA</div>
+        <div class="card-price d-flex justify-content-between w-100">
+          <span>KINSHASA </span><span class="secteur">Divers</span>
+        </div>
         <button>Visiter</button>
       </div>
     </div>
@@ -153,7 +173,9 @@
               <span class="star">&#9734;</span> <!-- Étoile vide -->
             </div>
         </div>
-        <div class="card-price">LUBUMBASHI</div>
+        <div class="card-price d-flex justify-content-between w-100">
+          <span>LUBIMBASHI </span><span class="secteur">Divers</span>
+        </div>
         <button>Visiter</button>
       </div>
     </div>
@@ -172,7 +194,9 @@
                   <span class="star">&#9734;</span> <!-- Étoile vide -->
                 </div>
             </div>
-          <div class="card-price">KINSHASA</div>
+            <div class="card-price d-flex justify-content-between w-100">
+              <span>KATANGA </span><span class="secteur">Divers</span>
+            </div>
           <button>Visiter</button>
         </div>
       </div> <!-- Ajoute plus de cartes ici -->
@@ -193,7 +217,9 @@
                 <span class="star">&#9734;</span> <!-- Étoile vide -->
               </div>
           </div>
-        <div class="card-price">KINSHASA</div>
+          <div class="card-price d-flex justify-content-between w-100">
+            <span>KINSHASA </span><span class="secteur">Electronique</span>
+          </div>
         <button>Visiter</button>
       </div>
     </div>
@@ -211,7 +237,9 @@
                 <span class="star">&#9734;</span> <!-- Étoile vide -->
               </div>
           </div>
-        <div class="card-price">KINSHASA</div>
+          <div class="card-price d-flex justify-content-between w-100">
+            <span>MATADI </span><span class="secteur">Electronique</span>
+          </div>
         <button>Visiter</button>
       </div>
     </div>
@@ -229,7 +257,9 @@
                 <span class="star">&#9734;</span> <!-- Étoile vide -->
               </div>
           </div>
-        <div class="card-price">KINSHASA</div>
+          <div class="card-price d-flex justify-content-between w-100">
+            <span>KINSHASA </span><span class="secteur">Electronique</span>
+          </div>
         <button>Visiter</button>
       </div>
     </div>
