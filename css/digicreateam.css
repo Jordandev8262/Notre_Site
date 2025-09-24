@@ -1374,6 +1374,17 @@ strong {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
   }
+  .collapsee {
+    margin-left: -40px;
+    margin-top: 68px;
+    margin-bottom: 0;
+    position: absolute;
+    border-radius : none;
+    background: var(--white-color);
+    width : 100%;
+    padding: 20px;
+    
+  }
 
   .navbar-nav {
     flex-direction: column;
